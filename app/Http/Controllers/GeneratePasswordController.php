@@ -11,10 +11,12 @@ class GeneratePasswordController
         
         $password = '12345678'; 
         $encryptedPassword = Hash::make($password);
+        $message = 'En el controlador de generar contraseña solo esta si deseas generar una contraseña e insertarla manualmente en la base de datos';
 
         return view('api', [
             'password' => $password,
             'encryptedPassword' => $encryptedPassword,
+            'message' => $message,
         ]);
     }
 }

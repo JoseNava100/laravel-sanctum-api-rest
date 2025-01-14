@@ -23,6 +23,10 @@
             <h3>Contraseña encriptada</h3>
             <p> {{ $encryptedPassword  }}</p>
         </div>
+
+        <footer>
+            <p> <strong> {{ $message }} </strong></p>
+        </footer>
         
     </div>
 
